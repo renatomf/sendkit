@@ -1,0 +1,17 @@
+{
+  "name": "sendkit-mcp",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^4.5.4",
+    "sendkit-core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.1"
+  }
+}
