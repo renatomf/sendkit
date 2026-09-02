@@ -33,12 +33,10 @@ function getTelegramBotToken() {
   return token;
 }
 
-program
-  .name("sendkit")
-  .description("SendKit CLI backed by sendkit-core")
+program.name("sendkit").description("SendKit CLI backed by sendkit-core");
 
-program  
-  .command("init")  
+program
+  .command("init")
   .description("Configure SendKit CLI local settings")
   .requiredOption("--telegram-bot-token <botToken>", "Telegram bot token")
   .action(async (options: { telegramBotToken: string }) => {
@@ -46,7 +44,7 @@ program
     console.log(`Saved SendKit CLI config to ${configPath}`);
   });
 
-program  
+program
   .command("telegram")
   .description("Send a Telegram message")
   .argument("<chatId>", "Telegram chat ID")

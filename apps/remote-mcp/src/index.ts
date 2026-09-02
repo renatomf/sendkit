@@ -2,9 +2,7 @@ import { Hono, type Context } from "hono";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { createClerkClient } from "@clerk/backend";
 import { generateClerkProtectedResourceMetadata } from "@clerk/mcp-tools/server";
-import { 
-  WebStandardStreamableHTTPServerTransport 
-} from "@modelcontextprotocol/sdk/server/webStandardStreamableHttp.js";
+import { WebStandardStreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/webStandardStreamableHttp.js";
 
 import { sendTelegramMessage, telegramMessageInputSchema } from "sendkit-core";
 
@@ -42,7 +40,7 @@ function createServer(botToken: string) {
         ...input,
         botToken,
       });
-  
+
       return {
         content: [
           {
@@ -56,7 +54,7 @@ function createServer(botToken: string) {
   );
 
   return server;
-};
+}
 
 const app = new Hono();
 
@@ -89,7 +87,7 @@ app.post("/:botToken/mcp", async (c) => {
     return unauthorizedMcpResponse(c, botToken);
   }
 
-   try {
+  try {
     const requestState = await clerkClient.authenticateRequest(c.req.raw, {
       acceptsToken: "oauth_token",
     });
