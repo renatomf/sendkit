@@ -6,11 +6,14 @@
   "exports": {
     ".": "./src/index.ts"
   },
+  "scripts": {
+    "start": "bun --env-file=../../.env run src/index.ts"
+  },
   "dependencies": {
     "@clerk/backend": "^3.17.0",
     "@clerk/mcp-tools": "^0.6.0",
     "@modelcontextprotocol/sdk": "^1.30.0",
     "hono": "^4.13.5",
-    "@renatomardev-org/sendkit-core": "workspace:*"
+    "@renatomardev-org/sendkit-core": "0.0.0"
   }
 }
