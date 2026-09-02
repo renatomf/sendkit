@@ -1,17 +1,33 @@
 {
-  "name": "@rmf-dev/sendkit-mcp",
-  "version": "0.0.0",
-  "private": true,
+  "name": "@renatomardev-org/sendkit-mcp",
+  "version": "0.0.1",
+  "bin": {
+    "sendkit-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
   "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
-    ".": "./src/index.ts"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
   },
    "scripts": {
-    "build": "tsdown"
+    "build": "tsdown",
+    "pack:dry": "bun run build && bun pm pack --dry-run",
+    "prepublishOnly": "bun run build"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.30.0",
-    "@rmf-dev/sendkit-core": "workspace:*",
+    "@renatomardev-org/sendkit-core": "workspace:*",
     "zod": "^4.5.4"
   }
 }

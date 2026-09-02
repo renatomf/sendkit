@@ -19,32 +19,32 @@
         "@clerk/backend": "^3.17.0",
         "@clerk/mcp-tools": "^0.6.0",
         "@modelcontextprotocol/sdk": "^1.30.0",
-        "@rmf-dev/sendkit-core": "workspace:*",
+        "@renatomardev-org/sendkit-core": "workspace:*",
         "hono": "^4.13.5",
       },
     },
     "packages/cli": {
-      "name": "@rmf-dev/sendkit",
+      "name": "@renatomardev-org/sendkit",
       "version": "0.0.0",
       "dependencies": {
-        "@rmf-dev/sendkit-core": "workspace:*",
+        "@renatomardev-org/sendkit-core": "workspace:*",
         "commander": "^15.0.0",
         "zod": "^4.5.4",
       },
     },
     "packages/core": {
-      "name": "@rmf-dev/sendkit-core",
+      "name": "@renatomardev-org/sendkit-core",
       "version": "0.0.0",
       "dependencies": {
         "zod": "^4.5.4",
       },
     },
     "packages/local-mcp": {
-      "name": "@rmf-dev/sendkit-mcp",
+      "name": "@renatomardev-org/sendkit-mcp",
       "version": "0.0.0",
       "dependencies": {
         "@modelcontextprotocol/sdk": "^1.30.0",
-        "@rmf-dev/sendkit-core": "workspace:*",
+        "@renatomardev-org/sendkit-core": "workspace:*",
         "zod": "^4.5.4",
       },
     },
@@ -140,11 +140,11 @@
 
     "@quansync/fs": ["@quansync/fs@1.0.0", "", { "dependencies": { "quansync": "^1.0.0" } }, "sha512-4TJ3DFtlf1L5LDMaM6CanJ/0lckGNtJcMjQ1NAV6zDmA0tEHKZtxNKin8EgPaVX1YzljbxckyT2tJrpQKAtngQ=="],
 
-    "@rmf-dev/sendkit": ["@rmf-dev/sendkit@workspace:packages/cli"],
+    "@renatomardev-org/sendkit": ["@renatomardev-org/sendkit@workspace:packages/cli"],
 
-    "@rmf-dev/sendkit-core": ["@rmf-dev/sendkit-core@workspace:packages/core"],
+    "@renatomardev-org/sendkit-core": ["@renatomardev-org/sendkit-core@workspace:packages/core"],
 
-    "@rmf-dev/sendkit-mcp": ["@rmf-dev/sendkit-mcp@workspace:packages/local-mcp"],
+    "@renatomardev-org/sendkit-mcp": ["@renatomardev-org/sendkit-mcp@workspace:packages/local-mcp"],
 
     "@rolldown/binding-android-arm-eabi": ["@rolldown/binding-android-arm-eabi@1.2.7", "", { "os": "android", "cpu": "arm" }, "sha512-EypzgnYCwyVY4NDHKzGmNJT5b+XaQEBniHxsMdeIQLB/tcCzZnhqrzHpZFbX9iaxx+5RiB8caATBtfvZP7zVxQ=="],
 
