@@ -8,7 +8,7 @@ description: Send Telegram messages from an agent through the SendKit MCP `teleg
 SendKit sends Telegram messages. It exposes the same operation two ways, both backed by `@cwa-dev/sendkit-core`:
 
 - **MCP tool** (`sendkit` server → `telegram` tool) — preferred for agents.
-- **CLI** (`@cwa-dev/sendkit`, binary `sendkit`) — fallback when MCP is unavailable or for manual verification.
+- **CLI** (`@renatomardev-org/sendkit`, binary `sendkit`) — fallback when MCP is unavailable or for manual verification.
 
 Both take a `chatId` and a `message`, call the Telegram Bot API, and return `{ ok: true, chatId, messageId }`.
 
