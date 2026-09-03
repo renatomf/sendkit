@@ -170,9 +170,3 @@ Nenhuma credencial fica no repositório — os arquivos que carregam segredos (`
 - **Auth remota:** Clerk (`@clerk/backend`, `@clerk/mcp-tools`)
 - **Build:** tsdown
 - **Lint/format:** oxlint / oxfmt
-
----
-
-## Licença
-
-Ainda não definida neste repositório.
